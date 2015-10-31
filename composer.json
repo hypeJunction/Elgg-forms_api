@@ -1,0 +1,20 @@
+{
+	"name": "hypejunction/elgg_forms",
+	"type": "elgg-plugin",
+	"description": "Forms API",
+	"homepage": "http://hypejunction.com",
+	"keywords": [
+		"elgg", "plugin", "forms"
+	],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Ismayil Khayredinov",
+			"email": "info@hypejunction.com"
+		}
+	],
+	"require-dev": {
+		"composer/installers": "1.*"
+	}
+}
+
