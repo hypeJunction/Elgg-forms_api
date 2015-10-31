@@ -1,12 +1,12 @@
 {
-  "name": "elgg_forms",
+  "name": "forms_api",
   "version": "0.0.0",
   "license": "GPL-2.0",
   "repository": {
     "type": "git",
-    "url": "git@github.com:hypeJunction/elgg_forms.git",
+    "url": "git@github.com:hypeJunction/forms_api.git",
     "owner": "hypeJunction",
-    "repo": "elgg_forms"
+    "repo": "forms_api"
   },
   "devDependencies": {
     "curlrequest": "^0.3.10",

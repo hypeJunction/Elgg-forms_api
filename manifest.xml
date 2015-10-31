@@ -2,11 +2,11 @@
 <plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
 
 	<name>Forms API</name>
-	<id>elgg_forms</id>
+	<id>forms_api</id>
 
 	<description>Forms API</description>
 	<category>forms</category>
-	<version type="dist">0.0.0</version>
+	<version type="dist">1.1.0</version>
 
 	<author>Ismayil Khayredinov (inof@hypejunction.com)</author>
 	<website>http://www.hypejunction.com/</website>
@@ -20,7 +20,7 @@
 
 	<suggests>
 		<type>plugin</type>
-		<name>elgg_forms_validation</name>
+		<name>forms_validation</name>
 	</suggests>
-
+	
 </plugin_manifest>

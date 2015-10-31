@@ -9,13 +9,13 @@
 
 require_once __DIR__ . '/autoloader.php';
 
-elgg_register_event_handler('init', 'system', 'elgg_forms_init');
+elgg_register_event_handler('init', 'system', 'forms_init');
 
 /**
  * Initialize the plugin
  * @return void
  */
-function elgg_forms_init() {
+function forms_init() {
 
 	elgg_extend_view('elgg.css', 'elements/forms/field.css');
 	elgg_extend_view('admin.css', 'elements/forms/field.css');
