@@ -1,0 +1,3 @@
+.elgg-field-label { display: block; }
+
+.elgg-required-indicator { font-size: 110%; font-weight: bold; color: #C24000; display: inline; padding: 0 5px; }
