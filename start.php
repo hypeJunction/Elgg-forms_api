@@ -6,7 +6,6 @@
  * @author Ismayil Khayredinov <info@hypejunction.com>
  * @copyright Copyright (c) 2015, Ismayil Khayredinov
  */
-
 require_once __DIR__ . '/autoloader.php';
 
 elgg_register_event_handler('init', 'system', 'forms_init');
@@ -43,6 +42,10 @@ if (!function_exists('elgg_view_input')) {
 			return '';
 		}
 
+		if ($input_type == 'hidden') {
+			return elgg_view("input/$input_type", $vars);
+		}
+
 		$id = elgg_extract('id', $vars);
 		if (!$id) {
 			$id_num++;
@@ -59,7 +62,6 @@ if (!function_exists('elgg_view_input')) {
 		unset($vars['help']);
 
 		$required = elgg_extract('required', $vars);
-
 		$field_class = (array) elgg_extract('field_class', $vars, array());
 		unset($vars['field_class']);
 
@@ -72,6 +74,7 @@ if (!function_exists('elgg_view_input')) {
 			'id' => $id,
 			'input' => $input,
 			'class' => $field_class,
+			'input_type' => $input_type,
 		));
 	}
 
