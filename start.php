@@ -16,8 +16,8 @@ elgg_register_event_handler('init', 'system', 'forms_init');
  */
 function forms_init() {
 
-	elgg_extend_view('elgg.css', 'elements/forms/field.css');
-	elgg_extend_view('admin.css', 'elements/forms/field.css');
+	elgg_extend_view('css/elgg', 'elements/forms/field.css');
+	elgg_extend_view('css/admin', 'elements/forms/field.css');
 }
 
 if (!function_exists('elgg_view_input')) {
@@ -37,7 +37,7 @@ if (!function_exists('elgg_view_input')) {
 	function elgg_view_input($input_type, array $vars = array()) {
 
 		static $id_num;
-
+		
 		if (!elgg_view_exists("input/$input_type")) {
 			return '';
 		}
