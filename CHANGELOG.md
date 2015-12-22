@@ -1,3 +1,13 @@
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/hypeJunction/Elgg-forms_api/compare/1.2.0...v1.2.1) (2015-12-22)
+
+
+### Bug Fixes
+
+* **css:** ensure css works in earlier Elgg versions ([7720717](https://github.com/hypeJunction/Elgg-forms_api/commit/7720717))
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/hypeJunction/Elgg-forms_api/compare/1.1.0...v1.2.0) (2015-12-10)
 
