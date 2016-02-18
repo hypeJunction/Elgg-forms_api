@@ -15,9 +15,8 @@ elgg_register_event_handler('init', 'system', 'forms_init');
  * @return void
  */
 function forms_init() {
-
-	elgg_extend_view('elgg.css', 'elements/forms/field.css');
-	elgg_extend_view('admin.css', 'elements/forms/field.css');
+	elgg_extend_view('css/elgg', 'elements/forms/field.css');
+	elgg_extend_view('css/admin', 'elements/forms/field.css');
 }
 
 if (!function_exists('elgg_view_input')) {
