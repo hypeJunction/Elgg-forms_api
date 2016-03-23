@@ -19,12 +19,6 @@
 		<comparison>ge</comparison>
 	</requires>
 
-	<requires>
-		<type>elgg_release</type>
-		<version>2.1</version>
-		<comparison>lt</comparison>
-	</requires>
-
 	<suggests>
 		<type>plugin</type>
 		<name>forms_validation</name>
