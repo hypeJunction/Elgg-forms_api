@@ -1,3 +1,21 @@
+<a name="4.0.0"></a>
+# [4.0.0] (2026-04-15)
+
+### Breaking Changes
+
+* Requires Elgg 4.x
+* Removed `activate.php` (blocked activation on Elgg ≥ 2.1)
+* Removed `start.php`, `manifest.xml`, `autoloader.php`
+* Removed `elgg_view_input()` polyfill (merged into Elgg core in 2.1)
+
+### Features
+
+* Added `Bootstrap.php` using `\Elgg\PluginBootstrap`
+* Added `elgg-plugin.php` with PSR-4 autoload
+* Updated `composer.json` to require `elgg/elgg: ^4.0`
+
+---
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://github.com/hypeJunction/Elgg-forms_api/compare/1.2.0...v1.2.1) (2015-12-22)
 

@@ -1,0 +1,53 @@
+# forms_api — Architecture (Elgg 4.x)
+
+## Summary
+
+Provides form field rendering views for Elgg 4.x. Originally a polyfill for
+`elgg_view_input()` (merged into Elgg core in 2.1). In Elgg 4.x this plugin
+only exists to supply the CSS styles and view partials for field wrappers
+(`elgg-field`, `elgg-field-label`, `elgg-field-required`).
+
+## Directory Structure
+
+```
+forms_api/
+├── classes/hypeJunction/FormsApi/
+│   └── Bootstrap.php          # Elgg 4.x plugin bootstrap
+├── languages/
+│   └── en.php                 # String: 'field:required'
+├── sass/elements/forms/
+│   └── field.scss             # Source SCSS (not compiled at runtime)
+├── views/default/elements/forms/
+│   ├── field.php              # Wraps label + input + help in .elgg-field div
+│   ├── help.php               # Renders .elgg-field-help div
+│   ├── input.php              # Delegates to input/$input_type view
+│   └── label.php              # Renders .elgg-field-label with required indicator
+├── views/default/elements/forms/
+│   └── field.css              # Extended into css/elgg and css/admin
+├── composer.json
+└── elgg-plugin.php
+```
+
+## Registered Hooks/Events
+
+None — this plugin registers no hooks or events.
+
+## Views Extended
+
+| Base view | Appended view |
+|-----------|---------------|
+| `css/elgg` | `elements/forms/field.css` |
+| `css/admin` | `elements/forms/field.css` |
+
+## Dependencies
+
+None (no plugin dependencies).
+
+## Migration Notes (2.x → 4.x)
+
+- **activate.php removed**: original file blocked activation on Elgg ≥ 2.1; removed entirely
+- **autoloader.php removed**: no classes existed in 2.x; PSR-4 autoload now in `composer.json`
+- **elgg_view_input() polyfill removed**: function is in Elgg core since 2.1
+- **start.php removed**: replaced with `Bootstrap::init()`
+- **manifest.xml removed**: replaced by `elgg-plugin.php`
+- **Bootstrap class**: implements `\Elgg\PluginBootstrap`; only `init()` is non-empty
