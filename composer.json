@@ -2,10 +2,12 @@
 	"name": "hypejunction/forms_api",
 	"version": "4.0.0",
 	"type": "elgg-plugin",
-	"description": "Forms API — form field rendering helpers for Elgg",
+	"description": "Forms API \u2014 form field rendering helpers for Elgg",
 	"homepage": "http://hypejunction.com",
 	"keywords": [
-		"elgg", "plugin", "forms"
+		"elgg",
+		"plugin",
+		"forms"
 	],
 	"license": "GPL-2.0-or-later",
 	"authors": [
@@ -30,6 +32,9 @@
 		}
 	},
 	"extra": {
-		"installer-name": "forms_api"
+		"installer-name": "forms_api",
+		"elgg-plugin": {
+			"id": "forms_api"
+		}
 	}
 }
