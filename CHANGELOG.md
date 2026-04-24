@@ -1,3 +1,17 @@
+<a name="5.0.0"></a>
+# [5.0.0] (2026-04-24)
+
+### Breaking Changes
+
+* Requires Elgg 5.x and PHP 8.2+
+
+### Notes
+
+* No code changes — plugin has no hooks/events and uses only stable Elgg view/format APIs
+* Added per-plugin Docker test stack (Elgg 5.x, PHP 8.2, MySQL 8.0) — previously absent
+
+---
+
 <a name="4.0.0"></a>
 # [4.0.0] (2026-04-15)
 
