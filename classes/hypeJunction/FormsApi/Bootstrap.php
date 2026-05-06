@@ -4,17 +4,22 @@ namespace hypeJunction\FormsApi;
 
 use Elgg\PluginBootstrap;
 
+/**
+ * Plugin bootstrap for forms_api.
+ */
 class Bootstrap extends PluginBootstrap {
 
 	/**
 	 * {@inheritdoc}
 	 */
-	public function load() {}
+	public function load() {
+	}
 
 	/**
 	 * {@inheritdoc}
 	 */
-	public function boot() {}
+	public function boot() {
+	}
 
 	/**
 	 * {@inheritdoc}
@@ -27,25 +32,30 @@ class Bootstrap extends PluginBootstrap {
 	/**
 	 * {@inheritdoc}
 	 */
-	public function ready() {}
+	public function ready() {
+	}
 
 	/**
 	 * {@inheritdoc}
 	 */
-	public function shutdown() {}
+	public function shutdown() {
+	}
 
 	/**
 	 * {@inheritdoc}
 	 */
-	public function activate() {}
+	public function activate() {
+	}
 
 	/**
 	 * {@inheritdoc}
 	 */
-	public function deactivate() {}
+	public function deactivate() {
+	}
 
 	/**
 	 * {@inheritdoc}
 	 */
-	public function upgrade() {}
+	public function upgrade() {
+	}
 }
