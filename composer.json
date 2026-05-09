@@ -3,19 +3,13 @@
 	"version": "5.0.0",
 	"type": "elgg-plugin",
 	"description": "Forms API \u2014 form field rendering helpers for Elgg",
-	"homepage": "http://hypejunction.com",
+	"homepage": "https://github.com/hypeJunction/Elgg-forms_api",
 	"keywords": [
 		"elgg",
 		"plugin",
 		"forms"
 	],
 	"license": "GPL-2.0-or-later",
-	"authors": [
-		{
-			"name": "Ismayil Khayredinov",
-			"email": "info@hypejunction.com"
-		}
-	],
 	"require": {
 		"php": ">=8.2",
 		"elgg/elgg": "^5.0",
