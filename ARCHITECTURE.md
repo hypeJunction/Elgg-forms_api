@@ -1,9 +1,9 @@
-# forms_api — Architecture (Elgg 5.x)
+# forms_api — Architecture (Elgg 6.x)
 
 ## Summary
 
-Provides form field rendering views for Elgg 5.x. Originally a polyfill for
-`elgg_view_input()` (merged into Elgg core in 2.1). In Elgg 5.x this plugin
+Provides form field rendering views for Elgg 6.x. Originally a polyfill for
+`elgg_view_input()` (merged into Elgg core in 2.1). In Elgg 6.x this plugin
 only exists to supply the CSS styles and view partials for field wrappers
 (`elgg-field`, `elgg-field-label`, `elgg-field-required`).
 
@@ -12,7 +12,7 @@ only exists to supply the CSS styles and view partials for field wrappers
 ```
 forms_api/
 ├── classes/hypeJunction/FormsApi/
-│   └── Bootstrap.php          # Elgg 5.x plugin bootstrap
+│   └── Bootstrap.php          # Elgg 6.x plugin bootstrap
 ├── languages/
 │   └── en.php                 # String: 'field:required'
 ├── sass/elements/forms/
@@ -59,3 +59,11 @@ None (no plugin dependencies).
 - **Bootstrap class**: unchanged — `\Elgg\PluginBootstrap` base class is still valid in 5.x
 - **No hooks/events**: plugin has no `'hooks'` key, so the 4→5 hooks→events merge is a no-op here
 - **Docker test stack**: added per-plugin `docker/` scaffold (Elgg 5.x, PHP 8.2, MySQL 8.0) — the 4.x migration pre-dated the per-plugin test stack convention
+
+## Migration Notes (5.x → 6.x)
+
+- **composer.json**: bumped `elgg/elgg ^5.0 → ~6.1.0`, version `5.0.0 → 6.0.0`, added `ext-intl`
+- **elgg-plugin.php**: version bumped `5.0.0 → 6.0.0`
+- **No JS**: plugin has no AMD/RequireJS modules — AMD→ESM change is a no-op here
+- **No removed functions**: plugin uses only stable CSS-extend and view APIs unchanged in 6.x
+- **docker/elgg6/**: added per-plugin Docker test stack for Elgg 6.x

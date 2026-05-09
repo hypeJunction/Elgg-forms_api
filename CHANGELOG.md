@@ -1,3 +1,18 @@
+<a name="6.0.0"></a>
+# [6.0.0] (2026-05-09)
+
+### Breaking Changes
+
+* Requires Elgg 6.x and PHP 8.1+
+
+### Notes
+
+* Bumped `elgg/elgg` requirement to `~6.1.0`; added `ext-intl` requirement
+* No code changes — plugin has no JS modules and uses only stable view/format APIs
+* Added per-plugin Docker test stack for Elgg 6.x (`docker/elgg6/`)
+
+---
+
 <a name="5.0.0"></a>
 # [5.0.0] (2026-04-24)
 
