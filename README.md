@@ -5,7 +5,6 @@ Elgg Form Fields API
 Temporary wrapper for `elgg_view_input()` until these changes are merged into Elgg core.
 Plugin can not be activated on Elgg versions >= 2.1.0.
 
-
 ## Compatibility
 
 | Plugin version | Elgg version |
