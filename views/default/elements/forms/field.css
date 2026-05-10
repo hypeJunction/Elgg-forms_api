@@ -1,3 +1,15 @@
-.elgg-field-label { display: block; }
+:root {
+    --forms-error-color: #C24000;
+}
 
-.elgg-required-indicator { font-size: 110%; font-weight: bold; color: #C24000; display: inline; padding: 0 5px; }
+.elgg-field-label {
+    display: block;
+}
+
+.elgg-required-indicator {
+    font-size: 110%;
+    font-weight: bold;
+    color: var(--forms-error-color);
+    display: inline;
+    padding: 0 5px;
+}

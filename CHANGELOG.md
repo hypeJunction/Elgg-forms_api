@@ -1,3 +1,50 @@
+<a name="6.0.0"></a>
+# [6.0.0] (2026-05-09)
+
+### Breaking Changes
+
+* Requires Elgg 6.x and PHP 8.1+
+
+### Notes
+
+* Bumped `elgg/elgg` requirement to `~6.1.0`; added `ext-intl` requirement
+* No code changes — plugin has no JS modules and uses only stable view/format APIs
+* Added per-plugin Docker test stack for Elgg 6.x (`docker/elgg6/`)
+
+---
+
+<a name="5.0.0"></a>
+# [5.0.0] (2026-04-24)
+
+### Breaking Changes
+
+* Requires Elgg 5.x and PHP 8.2+
+
+### Notes
+
+* No code changes — plugin has no hooks/events and uses only stable Elgg view/format APIs
+* Added per-plugin Docker test stack (Elgg 5.x, PHP 8.2, MySQL 8.0) — previously absent
+
+---
+
+<a name="4.0.0"></a>
+# [4.0.0] (2026-04-15)
+
+### Breaking Changes
+
+* Requires Elgg 4.x
+* Removed `activate.php` (blocked activation on Elgg ≥ 2.1)
+* Removed `start.php`, `manifest.xml`, `autoloader.php`
+* Removed `elgg_view_input()` polyfill (merged into Elgg core in 2.1)
+
+### Features
+
+* Added `Bootstrap.php` using `\Elgg\PluginBootstrap`
+* Added `elgg-plugin.php` with PSR-4 autoload
+* Updated `composer.json` to require `elgg/elgg: ^4.0`
+
+---
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://github.com/hypeJunction/Elgg-forms_api/compare/1.2.0...v1.2.1) (2015-12-22)
 
