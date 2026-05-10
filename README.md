@@ -1,6 +1,17 @@
 Elgg Form Fields API
 ===================
-![Elgg 5.x](https://img.shields.io/badge/Elgg-5.x-orange.svg?style=flat-square)
+![Elgg 1.11](https://img.shields.io/badge/Elgg-1.11.x-orange.svg?style=flat-square)
+![Elgg 1.12](https://img.shields.io/badge/Elgg-1.12.x-orange.svg?style=flat-square)
+![Elgg 2.0](https://img.shields.io/badge/Elgg-2.0.x-orange.svg?style=flat-square)
 
-Forms API — form field rendering helpers for Elgg.
+Temporary wrapper for `elgg_view_input()` until these changes are merged into Elgg core.
+Plugin can not be activated on Elgg versions >= 2.1.0.
+## Compatibility
 
+| Plugin version | Elgg version |
+|---|---|
+| 7.0.0 | 7.x |
+| 6.0.0 | 6.x |
+| 5.0.0 | 5.x |
+| 4.0.0 | 4.x |
+| 3.0.0 | 3.x |
