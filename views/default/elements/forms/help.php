@@ -12,4 +12,4 @@ if (!$help) {
 
 echo elgg_format_element('div', [
 	'class' => 'elgg-field-help elgg-text-help',
-		], $help);
+], $help);

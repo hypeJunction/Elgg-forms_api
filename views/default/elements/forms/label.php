@@ -21,8 +21,9 @@ if ($required) {
 		$indicator = elgg_format_element('span', [
 			'title' => elgg_echo('field:required'),
 			'class' => 'elgg-required-indicator',
-				], "&ast;");
+		], '&ast;');
 	}
+
 	if ($indicator) {
 		$label .= $indicator;
 	}
@@ -31,4 +32,4 @@ if ($required) {
 echo elgg_format_element('label', [
 	'for' => $id,
 	'class' => 'elgg-field-label'
-		], $label);
+], $label);
