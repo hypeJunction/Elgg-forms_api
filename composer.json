@@ -1,6 +1,5 @@
 {
     "name": "hypejunction/forms_api",
-    "version": "7.0.0",
     "type": "elgg-plugin",
     "description": "Forms API",
     "homepage": "http://hypejunction.com",
