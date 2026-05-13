@@ -1,32 +1,32 @@
 {
-	"name": "hypejunction/forms_api",
-	"version": "2.0.0",
-	"type": "elgg-plugin",
-	"description": "Forms API",
-	"homepage": "http://hypejunction.com",
-	"keywords": [
-		"elgg",
-		"plugin",
-		"forms"
-	],
-	"license": "GPL-2.0-or-later",
-	"authors": [
-		{
-			"name": "Ismayil Khayredinov",
-			"email": "info@hypejunction.com"
-		}
-	],
-	"require": {
-		"composer/installers": "^1.0 || ^2.0",
-		"php": ">=7.2",
-		"elgg/elgg": "^3.0"
-	},
-	"config": {
-		"allow-plugins": {
-			"composer/installers": true
-		}
-	},
-	"extra": {
-		"installer-name": "forms_api"
-	}
+    "name": "hypejunction/forms_api",
+    "version": "3.0.0",
+    "type": "elgg-plugin",
+    "description": "Forms API",
+    "homepage": "http://hypejunction.com",
+    "keywords": [
+        "elgg",
+        "plugin",
+        "forms"
+    ],
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Ismayil Khayredinov",
+            "email": "info@hypejunction.com"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.0 || ^2.0",
+        "php": ">=7.2",
+        "elgg/elgg": "^3.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    },
+    "extra": {
+        "installer-name": "forms_api"
+    }
 }
