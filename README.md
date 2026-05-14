@@ -4,3 +4,9 @@ Elgg Form Fields API
 
 Forms API — form field rendering helpers for Elgg.
 
+
+## Compatibility
+
+| Plugin version | Elgg version |
+|---|---|
+| current | 7.x |
