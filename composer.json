@@ -1,6 +1,5 @@
 {
     "name": "hypejunction/forms_api",
-    "version": "3.0.0",
     "type": "elgg-plugin",
     "description": "Forms API \u2014 form field rendering helpers for Elgg",
     "homepage": "https://github.com/hypeJunction/Elgg-forms_api",
