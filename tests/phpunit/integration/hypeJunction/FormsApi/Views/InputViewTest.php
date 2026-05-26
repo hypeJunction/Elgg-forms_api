@@ -15,7 +15,7 @@ class InputViewTest extends IntegrationTestCase {
 	public function down(): void {}
 
 	public function testDispatchesToTextInputView(): void {
-		$output = elgg_view('elements/forms/input', [
+		$output = \elgg_view('elements/forms/input', [
 			'input_type' => 'text',
 			'name' => 'fa_test_text',
 			'value' => 'hello',
@@ -25,7 +25,7 @@ class InputViewTest extends IntegrationTestCase {
 	}
 
 	public function testDispatchesToCheckboxesInputView(): void {
-		$output = elgg_view('elements/forms/input', [
+		$output = \elgg_view('elements/forms/input', [
 			'input_type' => 'checkboxes',
 			'name' => 'fa_test_chx',
 			'options' => ['a' => 'A', 'b' => 'B'],
@@ -35,7 +35,7 @@ class InputViewTest extends IntegrationTestCase {
 	}
 
 	public function testInputTypeNotPassedThroughAsAttribute(): void {
-		$output = elgg_view('elements/forms/input', [
+		$output = \elgg_view('elements/forms/input', [
 			'input_type' => 'text',
 			'name' => 'fa_test_strip',
 		]);
