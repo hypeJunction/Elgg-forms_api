@@ -32,8 +32,8 @@ class Bootstrap extends PluginBootstrap {
 	 * {@inheritdoc}
 	 */
 	public function init() {
-		elgg_extend_view('css/elgg', 'elements/forms/field.css');
-		elgg_extend_view('css/admin', 'elements/forms/field.css');
+		\elgg_extend_view('css/elgg', 'elements/forms/field.css');
+		\elgg_extend_view('css/admin', 'elements/forms/field.css');
 	}
 
 	/**

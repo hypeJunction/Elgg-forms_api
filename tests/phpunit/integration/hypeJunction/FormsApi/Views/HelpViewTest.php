@@ -15,17 +15,17 @@ class HelpViewTest extends IntegrationTestCase {
 	public function down(): void {}
 
 	public function testEmptyHelpRendersEmptyString(): void {
-		$output = elgg_view('elements/forms/help', []);
+		$output = \elgg_view('elements/forms/help', []);
 		$this->assertSame('', $output);
 	}
 
 	public function testFalsyHelpStringRendersEmptyString(): void {
-		$output = elgg_view('elements/forms/help', ['help' => '']);
+		$output = \elgg_view('elements/forms/help', ['help' => '']);
 		$this->assertSame('', $output);
 	}
 
 	public function testHelpRendersInDivWithExpectedClasses(): void {
-		$output = elgg_view('elements/forms/help', ['help' => 'Be concise.']);
+		$output = \elgg_view('elements/forms/help', ['help' => 'Be concise.']);
 		$this->assertStringContainsString('<div', $output);
 		$this->assertStringContainsString('elgg-field-help', $output);
 		$this->assertStringContainsString('elgg-text-help', $output);
@@ -33,7 +33,7 @@ class HelpViewTest extends IntegrationTestCase {
 	}
 
 	public function testHelpHtmlPassedThroughVerbatim(): void {
-		$output = elgg_view('elements/forms/help', [
+		$output = \elgg_view('elements/forms/help', [
 			'help' => '<em>important</em>',
 		]);
 		$this->assertStringContainsString('<em>important</em>', $output);

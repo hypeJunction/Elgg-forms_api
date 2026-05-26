@@ -15,7 +15,7 @@ class FieldViewTest extends IntegrationTestCase {
 	public function down(): void {}
 
 	public function testReturnsEmptyWhenInputMissing(): void {
-		$output = elgg_view('elements/forms/field', [
+		$output = \elgg_view('elements/forms/field', [
 			'label' => 'Name',
 			'help' => 'Your full name',
 		]);
@@ -23,7 +23,7 @@ class FieldViewTest extends IntegrationTestCase {
 	}
 
 	public function testRendersFieldWrapperWithInput(): void {
-		$output = elgg_view('elements/forms/field', [
+		$output = \elgg_view('elements/forms/field', [
 			'input' => '<input type="text" name="x"/>',
 		]);
 		$this->assertStringContainsString('<div', $output);
@@ -32,7 +32,7 @@ class FieldViewTest extends IntegrationTestCase {
 	}
 
 	public function testIncludesLabelAndHelp(): void {
-		$output = elgg_view('elements/forms/field', [
+		$output = \elgg_view('elements/forms/field', [
 			'input' => '<input/>',
 			'label' => '<label>Name</label>',
 			'help' => '<div>helper</div>',
@@ -42,7 +42,7 @@ class FieldViewTest extends IntegrationTestCase {
 	}
 
 	public function testRequiredFieldGetsRequiredClass(): void {
-		$output = elgg_view('elements/forms/field', [
+		$output = \elgg_view('elements/forms/field', [
 			'input' => '<input/>',
 			'required' => true,
 		]);
@@ -50,7 +50,7 @@ class FieldViewTest extends IntegrationTestCase {
 	}
 
 	public function testNonRequiredFieldHasNoRequiredClass(): void {
-		$output = elgg_view('elements/forms/field', [
+		$output = \elgg_view('elements/forms/field', [
 			'input' => '<input/>',
 			'required' => false,
 		]);
@@ -58,7 +58,7 @@ class FieldViewTest extends IntegrationTestCase {
 	}
 
 	public function testCustomClassMergedWithFieldClass(): void {
-		$output = elgg_view('elements/forms/field', [
+		$output = \elgg_view('elements/forms/field', [
 			'input' => '<input/>',
 			'class' => ['my-custom-class'],
 		]);

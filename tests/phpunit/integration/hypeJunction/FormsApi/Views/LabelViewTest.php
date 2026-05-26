@@ -15,17 +15,17 @@ class LabelViewTest extends IntegrationTestCase {
 	public function down(): void {}
 
 	public function testEmptyLabelRendersEmptyString(): void {
-		$output = elgg_view('elements/forms/label', []);
+		$output = \elgg_view('elements/forms/label', []);
 		$this->assertSame('', $output);
 	}
 
 	public function testFalsyLabelStringRendersEmptyString(): void {
-		$output = elgg_view('elements/forms/label', ['label' => '']);
+		$output = \elgg_view('elements/forms/label', ['label' => '']);
 		$this->assertSame('', $output);
 	}
 
 	public function testLabelRendersInLabelElement(): void {
-		$output = elgg_view('elements/forms/label', [
+		$output = \elgg_view('elements/forms/label', [
 			'label' => 'Display name',
 			'id' => 'fa_test_id',
 		]);
@@ -36,7 +36,7 @@ class LabelViewTest extends IntegrationTestCase {
 	}
 
 	public function testNonRequiredLabelHasNoIndicator(): void {
-		$output = elgg_view('elements/forms/label', [
+		$output = \elgg_view('elements/forms/label', [
 			'label' => 'Optional',
 			'required' => false,
 		]);
@@ -44,7 +44,7 @@ class LabelViewTest extends IntegrationTestCase {
 	}
 
 	public function testRequiredLabelGetsDefaultIndicator(): void {
-		$output = elgg_view('elements/forms/label', [
+		$output = \elgg_view('elements/forms/label', [
 			'label' => 'Required',
 			'required' => true,
 		]);
@@ -53,7 +53,7 @@ class LabelViewTest extends IntegrationTestCase {
 	}
 
 	public function testCustomRequiredIndicatorOverridesDefault(): void {
-		$output = elgg_view('elements/forms/label', [
+		$output = \elgg_view('elements/forms/label', [
 			'label' => 'Required',
 			'required' => true,
 			'required_indicator' => '<sup class="custom-mark">!</sup>',
@@ -63,7 +63,7 @@ class LabelViewTest extends IntegrationTestCase {
 	}
 
 	public function testFalsyRequiredIndicatorSuppressesIt(): void {
-		$output = elgg_view('elements/forms/label', [
+		$output = \elgg_view('elements/forms/label', [
 			'label' => 'Required',
 			'required' => true,
 			'required_indicator' => '',
